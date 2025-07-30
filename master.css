@@ -15,7 +15,10 @@
 
 
 body {
-    background: #eef2f3;
+background: rgb(0,51,102);
+background: linear-gradient(159deg, rgba(0,51,102,1) 0%, rgba(15,82,186,1) 100%);
+background-repeat: no-repeat;
+background-size: cover;
     display: flex;
     justify-content: center;
     align-items: start;
