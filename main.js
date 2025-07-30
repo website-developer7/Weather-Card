@@ -15,13 +15,16 @@ form.addEventListener('submit', e => {
     e.preventDefault();
     currentCity = input.value.trim();
     if (currentCity) {
+        card.classList.add("fade-in");
         fetchAndDisplay();
         clearInterval(window.updateInterval);
         window.updateInterval = setInterval(fetchAndDisplay, 60000);
     }
-    card.classList.add("fade-in");
 });
 
+input.addEventListener('input', e => {
+    card.classList.remove("fade-in");
+});
 async function fetchAndDisplay() {
     try {
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(currentCity)}&units=metric&lang=ar&appid=${apiKey}`;
