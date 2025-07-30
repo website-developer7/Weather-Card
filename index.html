@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Card</title>
+    <link rel="stylesheet" href="./master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form id="city-form">
+            <input type="text" id="city-input" placeholder="أدخل اسم المدينة" required>
+            <button type="submit">عرض الطقس</button>
+        </form>
+        <!-- Form -->
+
+        <div id="weather-card" class="card hidden">
+
+            <div class="card-header">
+                <h2 id="city-name">--</h2>
+                <span id="datetime">--</span>
+            </div>
+            <!-- card header -->
+
+            <div class="card-body">
+                <img id="weather-icon" src="" alt="weather">
+                <div class="temp">
+                    <span id="temperature">--</span><sup>°C</sup>
+                </div>
+                <!-- card body -->
+
+                <div class="details">
+                    <div><i class="fas fa-wind"></i> <span id="wind">--</span> m/s</div>
+                    <div><i class="fas fa-tint"></i> <span id="humidity">--</span> %</div>
+                </div>
+                <!-- details -->
+
+            </div>
+            <!-- card-body -->
+
+        </div>
+        <!-- Weather Card-->
+
+    </div>
+    <!-- container -->
+
+</body>
+
+</html>
