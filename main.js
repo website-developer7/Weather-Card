@@ -19,6 +19,7 @@ form.addEventListener('submit', e => {
         clearInterval(window.updateInterval);
         window.updateInterval = setInterval(fetchAndDisplay, 60000);
     }
+    card.classList.add("fade-in");
 });
 
 async function fetchAndDisplay() {

@@ -15,10 +15,10 @@
 
 
 body {
-background: rgb(0,51,102);
-background: linear-gradient(159deg, rgba(0,51,102,1) 0%, rgba(15,82,186,1) 100%);
-background-repeat: no-repeat;
-background-size: cover;
+    background: rgb(0, 51, 102);
+    background: linear-gradient(159deg, rgba(0, 51, 102, 1) 0%, rgba(15, 82, 186, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -104,4 +104,21 @@ background-size: cover;
     display: flex;
     gap: 20px;
     font-size: 16px
+}
+
+/* Card Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.4s ease forwards;
 }
